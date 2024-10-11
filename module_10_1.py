@@ -25,9 +25,9 @@ print(f'Работа потоков {finish - start}')
 # Потоковый вызов
 start = datetime.now()
 first = Thread(target=write_words, args=(10, 'example5.txt'))
-second = Thread(target=write_words, args=(10, 'example6.txt'))
-third = Thread(target=write_words, args=(10, 'example7.txt'))
-fourth = Thread(target=write_words, args=(10, 'example8.txt'))
+second = Thread(target=write_words, args=(30, 'example6.txt'))
+third = Thread(target=write_words, args=(200, 'example7.txt'))
+fourth = Thread(target=write_words, args=(100, 'example8.txt'))
 
 first.start()
 second.start()
