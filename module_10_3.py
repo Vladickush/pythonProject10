@@ -16,7 +16,7 @@ class Bank:
         for i in range(100):
             credit = randint(50, 500)
             self.balance += credit
-            if self.balance >= 000 and lock.locked():
+            if self.balance >= 500 and lock.locked():
                 lock.release()
             print(f'Пополнение: {credit:4}      Баланс: {self.balance:5}')
             sleep(0.001)
